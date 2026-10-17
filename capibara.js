@@ -4,7 +4,7 @@ const photos = [...document.querySelectorAll(".galeri")];
 let current = 0;
 
 function show(i) {
-  current = (i + photos.length) % photos.length; // sondan başa, baştan sona döner
+  current = (i + photos.length) % photos.length; 
   modalImage.src = photos[current].src;
   modalImage.alt = photos[current].alt;
 }
@@ -15,7 +15,7 @@ function openAt(i) {
 }
 
 photos.forEach((photo, i) => {
-  photo.tabIndex = 0; // klavye ile odaklanabilsin
+  photo.tabIndex = 0; 
   photo.setAttribute("role", "button");
   photo.addEventListener("click", () => openAt(i));
   photo.addEventListener("keydown", (e) => {
