@@ -1,0 +1,228 @@
+h2, p {
+    text-align: center;
+    font-family: 'Imperial Script', cursive;
+    font-size: 50px;
+}
+
+.ozellik {
+    position: relative;
+    top: 100px;
+  
+}
+h3{
+    font-family: 'Moon Dance', cursive;
+    font-size: 30px;
+    text-align: center;
+  
+}
+.galeribaslik {
+    font-family: 'Moon Dance', cursive;
+    font-size: 30px;
+    text-align: center;
+    top: 100px;
+    position: relative;
+  
+}
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    padding: 15px;
+    list-style: none;
+}
+
+.genel {
+    flex: 0 1 200px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    background-color: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(6px);
+    color:black;    
+    font-family: 'Moon Dance', cursive;
+    font-size: 25px;
+}
+body {
+background: linear-gradient(160deg, #f6e7d3, #e3b98f 55%, #b98a63)fixed;
+}
+.populer-kultur {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    padding: 15px;
+    list-style: none;
+    position: relative;
+    top: 100px;
+}
+img{
+width: 200px;
+height: 200px;
+text-align: center;
+position: relative;
+border: 5px solid black;
+cursor: pointer;
+transition: transform 0.25s ease,filter 0.25s ease;
+
+}
+.son{
+    position: relative;
+    top: 100px;
+    font-family: 'Moon Dance', cursive;
+}
+.btn-yesil{
+    position: relative;
+    top: 90px;
+    left: 50%;
+    
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #649e18;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+   
+}
+.btn-yesil:hover{
+    background-color: #4a7c13;
+    transition: background-color 0.3s ease;
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+img:hover{
+    transform: scale(1.04);
+    filter: brightness(0.85);
+}
+.photo-modal {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    max-height: none;
+    border: none;
+    padding: 40px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.85);
+    place-items: center;
+}
+.photo-modal[open] {
+    display: grid;
+}
+.photo-nav {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #111111;
+    font-size: 30px;
+    line-height: 1;
+    cursor: pointer;
+}
+#photo-prev { left: 20px; }
+#photo-next { right: 20px; }
+.photo-nav:hover { background: #dddddd; }
+
+.photo-modal #modal-image{
+    width: auto;
+    height: auto;
+    max-width: 90vw;
+    max-height: 85vh;
+    border: none;
+    object-fit: contain;
+    cursor: default;
+}
+.galeri-container{
+    position: relative;
+    top: 100px;
+}
+.photo-close{
+    position: fixed;
+    top: 20px;
+    right: 28px;
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #111111;
+    font-size: 34px;
+    line-height: 1;
+    cursor: pointer;
+}
+.photo-close:hover{
+    background: #ff5f57;
+    color: white;
+}
+.sohbet-ac {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 50%;
+    background: #075e54;
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 500;
+}
+
+.sohbet-penceresi {
+       position: fixed;
+    
+  position: fixed;
+top: auto;
+left: auto;
+right: 20px;
+bottom: 90px;
+margin: 0;
+    bottom: 90px;
+    margin: 0;
+
+    
+    padding: 0;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    width: min(360px, calc(100vw - 40px));
+    height: min(520px, calc(100vh - 110px));
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.sohbet-penceresi iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.sohbet-kapat {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    color: #111;
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.sohbet-kapat:hover {
+    background: #ff5f57;
+    color: white;
+}
