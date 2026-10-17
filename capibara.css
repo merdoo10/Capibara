@@ -200,10 +200,19 @@ margin: 0;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
-.sohbet-penceresi iframe {
-    width: 100%;
+.sohbet-penceresi .chat-container {
     height: 100%;
-    border: none;
+}
+
+.sohbet-penceresi .chat-header h3 {
+    font-family: inherit;
+    text-align: left;
+}
+
+.sohbet-penceresi .bubble ul {
+    display: block;
+    padding: 6px 0 0 18px;
+    list-style: disc;
 }
 
 .sohbet-kapat {

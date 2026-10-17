@@ -1,11 +1,12 @@
-* {
+.chat-container,
+.chat-container * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body {
+body:has(> .chat-container) {
   background: #d77718; 
   display: flex;
   justify-content: center;
