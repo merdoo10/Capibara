@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capibara</title>
-    <link rel="stylesheet" href="capibara.css"> 
+    <link rel="stylesheet" href="capibara.css">
+    <link rel="stylesheet" href="sohbetbotu.css"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Abel&family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Archivo+Black&family=Bebas+Neue&family=Cinzel:wght@400..900&family=Dancing+Script:wght@400..700&family=Geist+Pixel&family=Germania+One&family=Griffy&family=Imperial+Script&family=Indie+Flower&family=Jim+Nightshade&family=Lilita+One&family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Quicksand:wght@300..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -58,8 +59,41 @@
 
 <div id="sohbet" class="sohbet-penceresi" popover="manual">
   <button class="sohbet-kapat" popovertarget="sohbet" popovertargetaction="hide" aria-label="Sohbeti kapat">×</button>
-  <iframe src="sohbetbotu.html" title="Capibara sohbet botu" loading="lazy"></iframe>
+    <div class="chat-container">
+        
+        <div class="chat-header">
+            <div class="bot-info">
+                <div class="avatar">🐿️</div>
+                <div>
+                    <h3>Capibara</h3>
+                    <span class="status">cevrimici</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-messages" id="chat-box">
+            <div class="message-bot">
+                <div class="bubble">Iste en cok sorulan sorularin listesi: Sen neyi merak ediyorsun? <ul>            <li>Ne yer?</li>
+            <li>Ne kadar büyür?</li>
+            <li>Nerede yaşar?</li>
+            <li>Kaç yıl yaşar?</li>
+            <li>Yüzebilir mi?</li>
+            <li>Evde beslenir mi?</li>
+            <li>Tehlikeli mi?</li></ul> </div>
+            </div>
+            <div class="message-user">
+                <div class="bubble">...</div>
+            </div>
+        </div>
+
+        <div class="chat-input-area">
+            <input type="text" id="user-input" placeholder="Bir mesaj yazin veya komut girin..." autocomplete="off">
+            <button id="send-btn">Gonder</button>
+        </div>
+
+    </div>
 </div>
+<script src="sohbetbotu.js"></script>
 </body>
 
 </html>
